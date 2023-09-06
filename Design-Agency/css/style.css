@@ -1,10 +1,158 @@
+html, body {
+  font-family: Poppins, sans-serif;
+}
+
 .wrapper {
   min-height: 100%;
   width: 100%;
   overflow: hidden;
 }
+
 .container {
   min-width: 1270px;
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.button {
+  display: flex;
+  font-weight: 500px;
+  line-height: normal;
+  padding: 10px;
+  width: 105px;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  border-radius: 10px;
+  background: #20B15A;
+  white-space: nowrap;
+}
+
+.button--empty {
+  display: flex;
+  background-color: transparent;
+  font-weight: 500px;
+  line-height: normal;
+  padding: 10px;
+  width: 93px;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  border-radius: 10px;
+  border: 1px solid #20B15A;
+}
+
+.button--big {
+  display: inline-block;
+  font-weight: 500px;
+  line-height: normal;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  border-radius: 10px;
+  background: #20B15A;
+  white-space: nowrap;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.logo {}
+
+/* =============================================================================================================== */
+
+.header {
+  font-weight: 500px;
+}
+
+.header__top {}
+
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.header__logo {
+  margin-right: 425px;
+}
+
+.header__nav {
+  margin-right: auto;
+}
+
+.header__nav-list {
+  display: flex;
+}
+
+.header__nav-item {
+  margin-right: 30px;
+}
+
+.header__nav-item:last-child {
+  margin-right: 0;
+}
+
+.header__nav-link {
+  font-weight: 500px;
+  line-height: normal;
+  color: #000000;
+  white-space: nowrap;
+}
+
+.header__nav-link:hover {
+  color: #FF3F3A;
+  transition: all .3s;
+}
+
+.header__btn-box {
+  display: flex;
+  align-items: center;
+}
+
+.header__top-btn {
+  margin-right: 30px;
+}
+.header__top-btn:hover {
+  margin-right: 0px;
+}
+
+/* =============================================================================================================== */
+
+.header__body {}
+
+.header__body-inner {}
+
+.header__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000000;
+}
+
+.header__content {
+  margin-right: 30px;
+}
+
+.header__title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 65px;
+  max-width: 550px;
+  margin-bottom: 10px;
+}
+
+.header__content-btn {}
+
+.header__top-btn {}
+
+.button--big {}
+
+.header {}
+
+.img {}
+
+.header__row {}
