@@ -9,9 +9,10 @@ html, body {
 }
 
 .container {
-  min-width: 1270px;
+  max-width: 1270px;
   padding: 0 15px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .button {
@@ -45,14 +46,17 @@ html, body {
 .button--big {
   display: inline-block;
   font-weight: 500px;
+  font-size: 20px;
   line-height: normal;
-  padding: 10px;
+  padding: 20px 30px;
+  width: auto;
   justify-content: center;
   align-items: center;
   color: #FFFFFF;
-  border-radius: 10px;
+  border-radius: 16px;
   background: #20B15A;
   white-space: nowrap;
+  gap: 10px;
 }
 
 .button:hover {
@@ -65,6 +69,10 @@ html, body {
 
 .header {
   font-weight: 500px;
+  background: #D7F5DC 50% -10% / cover no-repeat;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
 }
 
 .header__top {}
@@ -77,23 +85,30 @@ html, body {
 }
 
 .header__logo {
-  margin-right: 425px;
+  margin-right: auto;
 }
 
 .header__nav {
-  margin-right: auto;
+  margin-right: 30px;
 }
 
 .header__nav-list {
   display: flex;
+  position: relative;
+  padding-left: 10px;
 }
 
 .header__nav-item {
   margin-right: 30px;
 }
 
-.header__nav-item:last-child {
-  margin-right: 0;
+.header__nav-item:first-child:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background: url("../images/icons/arrow-down.svg") no-repeat;
+  width: 20px;
+  height: 20px;
 }
 
 .header__nav-link {
@@ -116,21 +131,29 @@ html, body {
 .header__top-btn {
   margin-right: 30px;
 }
-.header__top-btn:hover {
+
+.header__top-btn:last-child {
   margin-right: 0px;
 }
 
 /* =============================================================================================================== */
 
-.header__body {}
+.header__body {
+  flex: 1 1 auto;
+}
 
-.header__body-inner {}
+.header__body-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
 .header__main {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #000000;
+  margin: auto 0;
 }
 
 .header__content {
@@ -145,14 +168,30 @@ html, body {
   margin-bottom: 10px;
 }
 
+.header__text {
+  font-family: Avenir;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 37px;
+}
+
 .header__content-btn {}
 
-.header__top-btn {}
+.header__row {
+  display: flex;
+  height: 120px;
+  justify-content: center;
+  background: #F8FFF9;
+  margin-bottom: 34px;
+}
 
-.button--big {}
+.header__row-item {
+  display: flex;
+  margin-right: 150px;
+}
 
-.header {}
-
-.img {}
-
-.header__row {}
+.header__row-item:last-child {
+  margin-right: 0;
+}
