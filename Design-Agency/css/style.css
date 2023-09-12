@@ -18,7 +18,11 @@ html, body {
 .main {}
 
 .main__wedo {
-  margin-bottom: 16px;
+  margin-bottom: 78px;
+}
+
+.main__portfolio {
+  margin-bottom: 122px;
 }
 
 .link:hover {
@@ -87,6 +91,16 @@ html, body {
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.heading__subtitle-wedo {
+  color: #20B15A;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
   margin-bottom: 15px;
 }
 
@@ -95,6 +109,7 @@ html, body {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  max-width: 495px;
 }
 
 /* =============================================================================================================== */
@@ -140,8 +155,6 @@ html, body {
   color: #000000;
   white-space: nowrap;
 }
-
-
 
 .nav_img {
   padding-left: 10px;
@@ -232,7 +245,6 @@ html, body {
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 40px;
-  max-width: 495px;
 }
 
 .wedo__heding {}
@@ -306,17 +318,22 @@ html, body {
   padding: 15px 20px;
 }
 
-.wedo__item-button::after {
-  content: "";
-  width: 16px;
-  height: 14px;
-  background: url("../images/icons/arrow-right.svg") 0 0 / 100% no-repeat;
-  margin-left: 10px;
+.learn_more {
+  margin-right: 10px;
 }
 
-.wedo__item-button::after:hover {
-  color: #FF3F3A;
+.arrow_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 14px;
+  stroke-width: 2px;
+}
+
+.arrow_right:hover path {
   transition: all .3s;
+  stroke: #FF3F3A;
 }
 
 .wedo__achiev {
@@ -338,7 +355,6 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
   border-right: 1px solid rgba(196, 196, 196, 0.50);
 }
 
@@ -349,6 +365,7 @@ html, body {
 .achiev__image-box {
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .achiev__image-box img {
@@ -356,9 +373,10 @@ html, body {
   height: 70px;
 }
 
-.achiev__img-text {}
-
-.achiev__item-number {}
+.achiev__img-text {
+  top: 0;
+  margin-bottom: 15px;
+}
 
 .achiev__item-number {
   color: #20B15A;
@@ -368,4 +386,66 @@ html, body {
   font-weight: 800;
   line-height: 60px;
   align-self: center;
+}
+
+/* ====================================== PORTFOLIO ================================================ */
+/* ====================================== PORTFOLIO ================================================ */
+
+.portfolio__inner {}
+
+.portfolio__top {
+  margin-bottom: 73px;
+}
+
+.portfolio__heding {}
+
+
+.potfolio__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 561px);
+  grid-column-gap: 95px;
+  grid-auto-rows: minmax(0, auto);
+}
+
+.potfolio__grid-item {
+  width: 561px;
+  align-content: space-between;
+}
+.potfolio__grid-item-1 {
+  margin-bottom: 98.64px;
+}
+.potfolio__grid-item-2 {
+  margin-bottom: 95.93px;
+}
+.potfolio__grid-item-3 {
+  margin-bottom: 74.98px;
+}
+.potfolio__grid-item-4 {
+  margin-bottom: 71488px;
+}
+
+/* .potfolio__item:last-child {
+  margin-right: 0px;
+} */
+
+.potfolio__grid-link {}
+
+.potfolio__image-box {}
+
+.potfolio__item-content {}
+
+.potfolio__item__title {
+  font-size: 22.82px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 14.26;
+}
+
+.potfolio__item-text {
+  font-family: Avenir;
+  font-size: 15.214px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
