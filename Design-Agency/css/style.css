@@ -25,7 +25,13 @@ html, body {
   margin-bottom: 122px;
 }
 
-.main__testimonials {}
+.main__testimonials {
+  margin-bottom: 209px;
+}
+
+.main__subscribe {
+  margin-bottom: 149px;
+}
 
 .link:hover {
   color: #FF3F3A;
@@ -74,6 +80,20 @@ html, body {
   background: #20B15A;
   white-space: nowrap;
   gap: 10px;
+}
+
+.button--subscribe {
+  display: flex;
+  position: absolute;
+  top: 5px;
+  right: 5.35px;
+  font-weight: 500;
+  line-height: normal;
+  height: 52.703px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  background: #F55F1D;
 }
 
 .button:hover {
@@ -467,8 +487,9 @@ html, body {
 /* ====================================== TESTIMONIALS ========================================== */
 /* ====================================== TESTIMONIALS ========================================== */
 
-.testimonials {
-  background-color: #FFF;
+.testimonials__inner {
+  display: flex;
+  position: absolute;
 }
 
 .main__testimonials__top {}
@@ -484,14 +505,14 @@ html, body {
 .slick-slider {}
 
 .slick-list {
+  display: flex;
   overflow: hidden;
-  position: absolute;
+  position: relative;
   max-width: 1320px;
 }
 
 .slick-track {
   display: flex;
-  margin-bottom: 209px;
 }
 
 /* Слайдер */
@@ -507,12 +528,9 @@ html, body {
   margin-right: 45px;
 }
 
-.slick-slide {
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  object-fit: cover; */
+.slick-track .slick-slide {
+  display: flex;
+  height: 260px;
 }
 
 .slick-slide.slick-active {}
@@ -596,6 +614,7 @@ html, body {
   padding: 20px;
   border: 1px solid #000;
 }
+
 .testimonials__slider-arrow:hover {
   display: flex;
   justify-content: center;
@@ -604,16 +623,78 @@ html, body {
   width: 80px;
   height: 80px;
   padding: 20px;
-  background: #D7F5DC;;
+  background: #D7F5DC;
+  ;
   border: none;
-  transition:  all .3s;
+  transition: all .3s;
 }
 
 .testimonials__slider-arrow path {
-  transition:  all .3s;
+  transition: all .3s;
 }
+
 .testimonials__slider-prev {
   margin-right: 21px;
 }
 
 .testimonials__slider-next {}
+
+/* ========================================= SUBSCRIBE ========================================== */
+/* ========================================= SUBSCRIBE ========================================== */
+
+.subscribe__inner {
+  text-align: center;
+  max-width: 596px;
+  margin: 0 auto;
+}
+
+.subscribe__top {
+  margin-bottom: 40px;
+}
+
+.subtitle--subscribe {
+  margin-bottom: 22px;
+}
+
+.title--subscribe {
+  max-width: 596px;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.subscribe__heding {}
+
+.heading__text {
+}
+
+.subscribe__form {
+}
+
+.subscribe__label {
+  display: flex;
+  position: relative;
+}
+
+.subscribe__form-input {
+  display: flex;
+  vertical-align: middle;
+  border-radius: 14px;
+  border: 1px solid #000;
+  padding: 20px 16px;
+  width: 596px;
+}
+
+.subscribe__form-input::placeholder {
+  display: flex;
+  justify-content: start;
+  color: #8B8B8B;
+  font-family: Avenir;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.subscribe__content-btn {}
+
+.subscribe__form-btn {}
