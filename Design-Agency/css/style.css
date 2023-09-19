@@ -98,6 +98,7 @@ html, body {
 
 .button:hover {
   transform: scale(1.05);
+  transition: all .3s;
 }
 
 .logo {}
@@ -502,7 +503,9 @@ html, body {
 /* Слайдер */
 .testimonials__slider {}
 
-.slick-slider {}
+.slick-slider {
+  height: 230px;
+}
 
 .slick-list {
   display: flex;
@@ -664,11 +667,9 @@ html, body {
 
 .subscribe__heding {}
 
-.heading__text {
-}
+.heading__text {}
 
-.subscribe__form {
-}
+.subscribe__form {}
 
 .subscribe__label {
   display: flex;
@@ -698,3 +699,122 @@ html, body {
 .subscribe__content-btn {}
 
 .subscribe__form-btn {}
+
+/* ========================================= FOOTER ========================================== */
+/* ========================================= FOOTER ========================================== */
+
+.footer {}
+
+.footer__top {
+  background: #00CA72;
+  padding: 76px 0 88px;
+}
+
+.footer__top-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__top-col {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+.footer__top-col:first-child {
+  max-width: 358px;
+}
+
+.footer__top-col:last-child {
+  max-width: 288px;
+}
+
+.footer__top-logo {
+  display: block;
+  font-size: 39.2px;
+  font-weight: 700;
+  margin-bottom: 19.4px;
+}
+
+.footer__top-text {
+  font-family: Avenir;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.text--adress {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.footer__socials {
+  display: flex;
+}
+
+.footer__socials-item {
+  margin-right: 15.31px;
+}
+
+.footer__socials-item:last-child {
+  margin-right: 0;
+}
+
+.footer__socials-item:hover {
+  transform: scale(1.1);
+  transition: all .3s;
+}
+
+.footer__socials-link {}
+
+.footer--link:hover {
+  color: #F9F9F9;
+  transition: all .3s;
+}
+
+.footer__top-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  white-space: nowrap;
+}
+
+.footer__top-list {}
+
+.footer__top-item {
+  font-family: Avenir;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+
+.footer__top-item:last-child {
+  margin-bottom: 0;
+}
+
+.footer__item-link {
+  white-space: nowrap;
+}
+
+.footer__bottom {
+  background: #00CA72;
+}
+
+.footer__bottom-inner {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.footer__copy {
+  font-family: Avenir;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 29px;
+}
