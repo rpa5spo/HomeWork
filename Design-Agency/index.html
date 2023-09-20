@@ -14,8 +14,12 @@
 
 <body>
   <div class="wrapper">
+    <div class="overlay"></div>
     <header class="header">
-      <div class="header__top">
+      <a href="" class="burger burger--follow">
+        <span></span>
+      </a>
+      <div class="header__top header__top--open">
         <div class="container">
           <div class="header__top-inner">
             <a class="header__logo logo" href="#">
@@ -24,20 +28,20 @@
             <nav class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item">
-                  <a href="#" class="header__nav-link link">Services</a>
-                  <img class="nav_img" src="./images/icons/arrow-down.svg" alt="">
+                  <a class="header__nav-link link" href="#">Services</a>
+                  <img class="nav__img" src="./images/icons/arrow-down.svg" alt="">
                 </li>
                 <li class="header__nav-item">
-                  <a href="#" class="header__nav-link link">About Us</a>
+                  <a class="header__nav-link link" href="#wedo">About Us</a>
                 </li>
                 <li class="header__nav-item">
-                  <a href="#" class="header__nav-link link">Contact Us</a>
+                  <a class="header__nav-link link" href="#footer">Contact Us</a>
                 </li>
               </ul>
             </nav>
             <div class="header__btn-box">
               <a class="header__top-btn button button--empty" href="#">Login</a>
-              <a class="header__top-btn button" href="#">Register</a>
+              <a class="header__top-btn button" href="#subscribe">Register</a>
             </div>
           </div>
         </div>
@@ -78,7 +82,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="main__wedo">
+      <section class="main__wedo" id="wedo">
         <div class="container">
           <div class="wedo__inner">
             <div class="wedo__top">
@@ -213,7 +217,7 @@
           </div>
         </div>
       </section>
-      <section class="main__portfolio">
+      <section class="main__portfolio" id="portfolio">
         <div class="container">
           <div class="portfolio__inner">
             <div class="portfolio__top">
@@ -385,7 +389,7 @@
           </div>
         </div>
       </section>
-      <section class="main__subscribe">
+      <section class="main__subscribe" id="subscribe">
         <div class="container">
           <div class="subscribe__inner">
             <div class="subscribe__top">
@@ -409,7 +413,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="footer__top">
         <div class="container">
           <div class="footer__top-inner">
@@ -468,13 +472,13 @@
                   <a class="footer__item-link footer--link" href="#">Services</a>
                 </li>
                 <li class="footer__top-item">
-                  <a class="footer__item-link footer--link" href="#">Portfolio</a>
+                  <a class="footer__item-link footer--link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="footer__top-item">
-                  <a class="footer__item-link footer--link" href="#">About Us</a>
+                  <a class="footer__item-link footer--link" href="#wedo">About Us</a>
                 </li>
                 <li class="footer__top-item">
-                  <a class="footer__item-link footer--link" href="#">Contact Us</a>
+                  <a class="footer__item-link footer--link" href="#footer">Contact Us</a>
                 </li>
               </ul>
             </div>
