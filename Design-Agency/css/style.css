@@ -842,7 +842,31 @@ html, body {
 
 /* ============================================ MEDIA ========================================== */
 /* ============================================ MEDIA ========================================== */
+/* -------------------------------------------- 1230 ------------------------------------------- */
+@media (max-width: 1230px) {
 
+  /* .header__main {
+    display: flex;
+    justify-content: center;
+} */
+  .header__title {
+    font-size: 36px;
+    line-height: 35px;
+    max-width: 400px;
+  }
+
+  .header__text {
+    font-size: 15px;
+    font-weight: 500;
+    max-width: 400px;
+  }
+
+  .header img {
+    max-width: 550px;
+  }
+}
+
+/* -------------------------------------------- 1100 ------------------------------------------- */
 @media (max-width: 1100px) {
   .burger {
     position: fixed;
@@ -884,6 +908,26 @@ html, body {
     background: #000;
     border-radius: 3px;
   }
+
+  /* ------------------X--------------- */
+  .burger.open::before {
+    position: fixed;
+    transform: rotate(45deg);
+    top: 43px;
+  }
+
+  .burger.open::after {
+    position: fixed;
+    transform: rotate(-45deg);
+    top: 43px;
+  }
+
+  .burger.open span {
+    transition: all .3s;
+    transform: scale(0);
+  }
+
+  /* ------------------X--------------- */
 
   .header {
     padding-top: 83px;
@@ -952,10 +996,37 @@ html, body {
   }
 }
 
+/* --------------------------------------------- 970 ------------------------------------------- */
+@media (max-width: 970px) {
+  .header__content {
+    margin-right: 0;
+  }
+
+  .header img {
+    display: none;
+  }
+
+  .header__row {
+    display: none;
+  }
+}
+
+/* --------------------------------------------- 400 ------------------------------------------- */
 
 @media (max-width: 400px) {
   .header__top {
     min-width: none;
     left: 0;
+  }
+
+  /* ------------------------------------------------- */
+  .header__title {
+    max-width: none;
+    font-size: 30px;
+  }
+
+  .header__text {
+    max-width: none;
+    font-size: 13px;
   }
 }
