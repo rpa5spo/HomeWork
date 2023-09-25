@@ -8,6 +8,21 @@ $(function () {
     appendArrows: $('.testimonials__slider-arrows'),
     variableWidth: true,
     waitForAnimate: false,
+    responsive:
+      [
+        {
+          breakpoint: 1230,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 970,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ]
   })
   $('.testimonials__slider-prev').on('click', function (e) {
     e.preventDefault()
@@ -37,11 +52,12 @@ $(function () {
     }
   }, 0);
 
-  $('.burger, .overlay').on('click', function (e) {
+  $('.burger, .overlay, .header__nav-link').on('click', function (e) {
     e.preventDefault()
     $('.header__top').toggleClass('header__top--open')
     $('.overlay').toggleClass('overlay--show')
     $('.burger').toggleClass('open')
+    $('body').toggleClass('stop')
   })
 
 

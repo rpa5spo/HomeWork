@@ -3,6 +3,10 @@ html, body {
   font-size: 16px;
 }
 
+body.stop {
+  overflow-y: hidden;
+}
+
 .wrapper {
   min-height: 100%;
   width: 100%;
@@ -456,7 +460,7 @@ html, body {
 }
 
 .potfolio__left-item {
-  width: 561px;
+  max-width: 561px;
   align-content: space-between;
   margin-bottom: 98.64px;
 }
@@ -683,7 +687,16 @@ html, body {
 
 .subscribe__heding {}
 
-.heading__text {}
+.heading__text {
+  color: #8B8B8B;
+  text-align: center;
+  font-family: Avenir;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
 
 .subscribe__form {}
 
@@ -846,7 +859,7 @@ html, body {
   }
 
   .header__text {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     max-width: 400px;
   }
@@ -856,30 +869,54 @@ html, body {
   }
 
   .heading__subtitle {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .heading__title {
     font-size: 22px;
-    max-width: 400px;
+    max-width: none;
   }
 
   .wedo__item {
     padding: 40px 15px;
   }
 
+  .portfolio__columns {
+    justify-content: center;
+    align-items: center;
+  }
 
   .portfolio__column-left,
   .portfolio__column-right {
-    max-width: 450px;
+    max-width: 396px;
+    margin: 0 auto;
   }
 
   .potfolio__image-box img {
-    max-width: 450px;
+    max-width: 396px;
   }
 
   .potfolio__item-content {
-    max-width: 450px;
+    max-width: 396px;
+  }
+
+  .testimonials__slider-arrow {
+    width: 60px;
+    height: 60px;
+  }
+
+  .testimonials__slider-arrow:hover {
+    width: 60px;
+    height: 60px;
+  }
+
+  .testimonials__quote,
+  .testimonials__info-position {
+    font-size: 16px;
+  }
+
+  .testimonials__info-name {
+    font-size: 18px;
   }
 }
 
@@ -1026,7 +1063,7 @@ html, body {
     margin-bottom: 10px;
   }
 
-  .wedo__item-text {
+  .testimonials__quote {
     font-size: 16px;
     margin-bottom: 15px;
   }
@@ -1058,6 +1095,31 @@ html, body {
     margin-bottom: 40px;
   }
 
+  .footer__top {
+    padding: 34px 0 15px;
+  }
+
+  .footer__top-logo {
+    font-size: 32px;
+  }
+
+  .footer__top-text {
+    font-size: 18px;
+  }
+
+  .footer__top-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .footer__top-item {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .footer__copy {
+    font-size: 18px;
+  }
 }
 
 /* --------------------------------------------- 970 ------------------------------------------- */
@@ -1074,6 +1136,10 @@ html, body {
     display: none;
   }
 
+  .main__wedo {
+    margin-bottom: 50px;
+  }
+
   .wedo__achiev {
     display: none;
   }
@@ -1082,15 +1148,43 @@ html, body {
     padding: 40px 15px 10px;
   }
 
-  .portfolio__columns {
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
+  .main__portfolio {
+    margin-bottom: 50px;
   }
 
-  .portfolio__column-left {
-    justify-content: center;
+  .portfolio__columns {
+    flex-direction: column;
+    margin: 0;
   }
+
+  .portfolio__column-left,
+  .portfolio__column-right {
+    justify-content: center;
+    margin: 0;
+  }
+
+  .potfolio__left-item,
+  .potfolio__right-item {
+    max-width: 396px;
+    margin-bottom: 55px;
+  }
+
+  .potfolio__left-item:last-child {
+    margin-bottom: 50px;
+  }
+
+  .main__testimonials {
+    margin-bottom: 50px;
+  }
+
+  .main__testimonials__heding {
+    margin-bottom: 50px;
+  }
+
+  .main__subscribe {
+    margin-bottom: 50px;
+  }
+
 }
 
 /* --------------------------------------------- 870 ------------------------------------------- */
@@ -1104,24 +1198,79 @@ html, body {
   .wedo__item:last-child {
     margin-right: auto;
   }
-}
 
-/* --------------------------------------------- 400 ------------------------------------------- */
-
-@media (max-width: 400px) {
-  .header__top {
-    min-width: none;
-    left: 0;
+  .footer__top-text {
+    margin-bottom: 10px;
   }
 
-  /* ------------------------------------------------- */
-  .header__title {
-    max-width: none;
-    font-size: 30px;
-  }
-
-  .header__text {
-    max-width: none;
-    font-size: 13px;
+  .footer__socials {
+    margin-bottom: 10px;
   }
 }
+
+/* --------------------------------------------- 790 ------------------------------------------- */
+@media (max-width: 790px) {
+  .footer__top-inner {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .footer__top-col:first-child {
+    flex-basis: 100%;
+    max-width: none;
+    margin-bottom: 20px;
+  }
+
+  .footer__top-col {
+    margin-bottom: 20px;
+  }
+
+  .footer__top-col:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+/* --------------------------------------------- 500 ------------------------------------------- */
+
+@media (max-width: 500px) {
+  .main__testimonials__heding {
+    margin-bottom: 10px;
+  }
+
+  .testimonials__slider-arrows {
+    position: relative;
+    top: 10px;
+  }
+
+  .testimonials__slide {}
+
+  .footer__top-col:last-child {
+    flex-basis: 100%;
+    max-width: none;
+  }
+}
+
+  /* --------------------------------------------- 400 ------------------------------------------- */
+
+  @media (max-width: 400px) {
+    .header__top {
+      min-width: none;
+      left: 0;
+    }
+
+    /* ------------------------------------------------- */
+    .header__title {
+      max-width: none;
+      font-size: 30px;
+    }
+
+    .header__text {
+      max-width: none;
+      font-size: 13px;
+    }
+
+    .main__portfolio {
+      margin-bottom: 50px;
+    }
+  }
