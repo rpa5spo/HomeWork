@@ -13,6 +13,7 @@ $(function () {
         {
           breakpoint: 1230,
           settings: {
+            variableWidth: false,
             slidesToShow: 2,
           },
         },
@@ -20,6 +21,7 @@ $(function () {
           breakpoint: 970,
           settings: {
             slidesToShow: 1,
+            centerMode: true,
           },
         },
       ]

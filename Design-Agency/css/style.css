@@ -522,15 +522,16 @@ body.stop {
 }
 
 /* Слайдер */
-.testimonials__slider {}
+.testimonials__slider {
+  min-width: 0;
+}
 
-.slick-slider {}
+.slick-slider {
+  min-width: 0;
+}
 
 .slick-list {
-  display: flex;
   overflow: hidden;
-  position: relative;
-  max-width: 1320px;
   height: 300px;
 }
 
@@ -540,10 +541,6 @@ body.stop {
 
 /* Слайдер */
 .testimonials__slide {
-  display: flex;
-  /* position: relative; */
-  flex-direction: column;
-  align-items: flex-start;
   padding: 40px;
   border-radius: 20px;
   background: #FFF;
@@ -554,6 +551,7 @@ body.stop {
 .slick-track .slick-slide {
   display: flex;
   height: 260px;
+  /* max-width: 470px; */
 }
 
 .slick-slide.slick-active {}
@@ -567,10 +565,6 @@ body.stop {
 
 .testimonials__slide-inner {}
 
-.testimonials__slide .slick-slide .slick-current .slick-active {
-  width: 470px;
-}
-
 .testimonials__quote {
   font-family: Avenir;
   font-size: 18px;
@@ -578,7 +572,8 @@ body.stop {
   font-weight: 400;
   line-height: 25px;
   margin-bottom: 20px;
-  width: 390px;
+  max-width: 390px;
+  height: 100px;
 }
 
 .testimonials__user {
@@ -910,6 +905,13 @@ body.stop {
     height: 60px;
   }
 
+  .slick-track .slick-slide {
+    max-width: 470px;
+  }
+.slick-track {
+  justify-content:space-between;
+  margin: 0 40px;
+}
   .testimonials__quote,
   .testimonials__info-position {
     font-size: 16px;
@@ -1251,26 +1253,26 @@ body.stop {
   }
 }
 
-  /* --------------------------------------------- 400 ------------------------------------------- */
+/* --------------------------------------------- 400 ------------------------------------------- */
 
-  @media (max-width: 400px) {
-    .header__top {
-      min-width: none;
-      left: 0;
-    }
-
-    /* ------------------------------------------------- */
-    .header__title {
-      max-width: none;
-      font-size: 30px;
-    }
-
-    .header__text {
-      max-width: none;
-      font-size: 13px;
-    }
-
-    .main__portfolio {
-      margin-bottom: 50px;
-    }
+@media (max-width: 400px) {
+  .header__top {
+    min-width: none;
+    left: 0;
   }
+
+  /* ------------------------------------------------- */
+  .header__title {
+    max-width: none;
+    font-size: 30px;
+  }
+
+  .header__text {
+    max-width: none;
+    font-size: 13px;
+  }
+
+  .main__portfolio {
+    margin-bottom: 50px;
+  }
+}
