@@ -20,6 +20,7 @@ $(function () {
         {
           breakpoint: 970,
           settings: {
+            variableWidth: true,
             slidesToShow: 1,
             centerMode: true,
           },
